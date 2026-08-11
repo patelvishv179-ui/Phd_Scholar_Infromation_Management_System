@@ -1,0 +1,49 @@
+ONSUBMIT - > PAR LOADER
+
+
+Login_Process.php ====================== |>
+
+$query = "SELECT * FROM $table WHERE $field LIMIT 1"; ❌
+if ($role === "scholar") {
+    $query = "SELECT * FROM scholar_master WHERE (EMAIL=? OR MOBILE=?) LIMIT 1";
+} else {
+    $query = "SELECT * FROM admin_master WHERE (ADMIN_EMAIL=? OR MOBILE=?) LIMIT 1";
+}
+
+--> verify OTP
+
+$_SESSION['otp_attempts'][$email] = 0; -> Per user karvu na ke globally
+
+SUGESSIONS:
+
+$CONFIG FUNCTION MA J PASS KARI DEVU MAIL SEND NA 
+
+SCHOLAR: 
+        EMAIL SACHO CHHE KE NAI CHECK BEACUSE -> EMAIL DELIVERY FAIL THAI SAKE 
+
+
+MANAGE SCHOLARS:
+
+    -> ADD SCHOLAR -> ERROR AVE TO PACHHI -> DIRECT MANAGE SDHOLAR KHULE CHHE -> NE KE MODEL KE CHHE OLD VALUE BATAVI RAHYU HOY TO USER NE KHBR PADE EASILY -> USE TOAST
+
+BUTTON NAMES:
+
+BUTTONS NAME:
+
+SAVE -> 
+
+	FIRST THREE LETTER _ BUTTON NAME _BTN
+
+EXAMPLE: EDU_SAVE_BTN
+
+---------------------------------------
+
+SAVE & NEXT ->
+
+	FIRST THREE LETTER _ BUTTON NAME _BTN
+
+EXAMPLE: EDU_SAVEANDNEXT_BTN
+
+--------------------------------------	
+
+OTP DETAILES STORE IN TABLE

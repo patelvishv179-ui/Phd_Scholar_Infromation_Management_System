@@ -1,0 +1,164 @@
+   body {
+       background: #f2f4f7;
+       font-family: Segoe UI;
+   }
+
+   .main-card {
+    max-width: 600px;   /* aa value ochhi karo */
+    margin: auto;
+    }
+
+   .main-card {
+       background: white;
+       border-radius: 12px;
+       box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
+   }
+
+   .header-area {
+       padding: 14px;
+       display: flex;
+       justify-content: space-between;
+       border-bottom: 1px solid #ddd;
+   }
+
+   .header-area img {
+       width: 40px;
+       height: auto;
+       object-fit: contain;
+   }
+
+   .header-center {
+       text-align: center;
+       flex: 1;
+   }
+
+   .header-center h4 {
+       margin: 0;
+       font-weight: 700;
+   }
+
+   .header-center p {
+       margin: 0;
+       font-size: 13px;
+       color: #666;
+   }
+
+   .section-box {
+       background: #f8f9fb;
+       padding: 15px;
+       border-radius: 8px;
+       border: 1px solid #ddd;
+   }
+
+   label {
+       font-weight: 600;
+       font-size: 14px;
+   }
+
+   .form-control,
+   .form-select {
+       height: 36px;
+       font-size: 14.9px;
+   }
+
+   .password-box {
+       position: relative;
+   }
+
+   .password-box i {
+       position: absolute;
+       right: 10px;
+       top: 50%;
+       transform: translateY(-50%);
+       cursor: pointer;
+   }
+
+   /* LOGIN */
+   .login-link {
+       text-align: center;
+       margin-top: 10px;
+       font-size: 13px;
+   }
+
+   .login-link a {
+       text-decoration: none;
+        color: #0b427d;
+       font-weight: 600;
+   }
+
+   .errortext {
+       font-size: 13px;
+       font-weight: 400;
+   }
+
+   @media (max-width: 576px) {
+       .header-center h4 {
+           font-size: 16px;
+       }
+
+       label {
+           font-size: 13px;
+       }
+   }
+
+   @media (min-width: 768px) and (max-width: 1024px) {
+
+       .main-card {
+           max-width: 450px;
+           margin: auto;
+       }
+
+       .header-center h4 {
+           font-size: 20px;
+       }
+
+       .section-box {
+           padding: 14px;
+       }
+
+       .form-control,
+       .form-select {
+           height: 38px;
+           font-size: 15px;
+       }
+
+       .header-area img {
+           width: 45px;
+       }
+
+   }
+
+   /* Large Desktop & 4K Screens */
+   @media (min-width: 1600px) {
+
+       .main-card {
+           max-width: 500px;
+           margin: auto;
+       }
+
+       .header-center h4 {
+           font-size: 26px;
+       }
+
+       .header-center p {
+           font-size: 16px;
+       }
+
+       label {
+           font-size: 16px;
+       }
+
+       .form-control,
+       .form-select {
+           height: 44px;
+           font-size: 16px;
+       }
+
+       .header-area img {
+           width: 55px;
+       }
+
+       .section-box {
+           padding: 20px;
+       }
+   }
